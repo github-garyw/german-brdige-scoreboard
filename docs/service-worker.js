@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.b2eafd8c6041246d0ff6d7ed8907a61e.js"
+  "/german-brdige-scoreboard/precache-manifest.cb6832ffca73ef95bb2308806ff516d9.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "german-bridge-scoreboard"});
