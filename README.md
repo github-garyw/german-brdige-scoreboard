@@ -1,6 +1,8 @@
 # german-bridge-scoreboard
-Scoreboard of German Bridge PWA
+Scoreboard of German Bridge PWA :-)
+
 Vuejs + Typescript + Vuetify
+https://github-garyw.github.io/german-brdige-scoreboard/
 
 ## Project setup
 ```
