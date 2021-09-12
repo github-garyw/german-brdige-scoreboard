@@ -1,4 +1,6 @@
 # german-bridge-scoreboard
+Scoreboard of German Bridge PWA
+Vuejs + Typescript + Vuetify
 
 ## Project setup
 ```

@@ -1,0 +1,46 @@
+<template>
+<span>
+    <span v-if="editing" @click="dec"> - </span>
+    {{value}}
+    <span v-if="editing" @click="inc"> + </span>
+</span>
+</template>
+
+<script lang="ts">
+import {
+    Component,
+    Vue
+} from 'vue-property-decorator';
+
+const NumberCellProps = Vue.extend({
+    props: {
+        value: Number,
+        editing: Boolean
+    }
+})
+
+@Component({
+    name: 'NumberCell'
+})
+export default class NumberCell extends NumberCellProps {
+
+    onCreate() {
+        this.editing = false;
+    }
+    setValue(value: number) {
+        this.value = value;
+    }
+    inc() {
+        this.value++;
+        this.$emit('update:value', this.value);
+    }
+    dec() {
+        this.value--;
+        this.$emit('update:value', this.value);
+    }
+}
+</script>
+
+<style scoped>
+
+</style>
